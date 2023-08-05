@@ -955,6 +955,10 @@ ol {
     align-items: center;
 }
 
+.modal-check-span {
+    display: inline-flex;
+}
+
 .modal-check-text span {
     width: 16px;
     height: 16px;

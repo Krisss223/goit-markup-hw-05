@@ -581,26 +581,57 @@ ol {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-bottom: 16px;
 }
+
+.footer-form {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-label {}
 
 .footer-form-email {
     width: 264px;
     height: 40px;
     border-radius: 4px;
     border: 1px solid var(--white, #FFF);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     background: transparent;
-    padding: 0px 24px;
+    padding-left: 16px;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    color: var(--white, #FFF);
+    outline: transparent;
 }
 
 .footer-form-email::placeholder {
     color: var(--white, #FFF);
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 2;
-    letter-spacing: 0.04;
+
 }
 
+.footer-form-button {
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--white, #FFF);
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none;
+    border-radius: 4px;
+
+}
+
+.footer-icon-button {
+    margin-left: 16px;
+    fill: var(--white, #FFF);
+}
 
 /**---------------------------------- ---------------------------------Portfolio */
 .portfolio-main {}
@@ -834,10 +865,10 @@ ol {
     color: var(--lightslate, #8E8F99);
     font-size: 12px;
     font-weight: 400;
-    line-height: 1.2;
     letter-spacing: 0.04em;
     margin-bottom: 4px;
-    display: inline-block;
+    display: block;
+    line-height: 1.17;
 }
 
 .modal-input-conteiner {
@@ -855,6 +886,8 @@ ol {
     padding-left: 38px;
     padding-right: 16px;
     outline: transparent;
+    background-color: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus {
@@ -868,6 +901,7 @@ ol {
     left: 16px;
     transform: translateY(-50%);
     top: 50%;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -875,24 +909,37 @@ ol {
     fill: var(--iris);
 }
 
+.modal-textarea-conteiner {
+    margin-bottom: 16px;
+}
+
 .modal-textarea {
     height: 120px;
     width: 100%;
     border-radius: 4px;
-    padding: 8px 16px 16px 16px;
+    padding: 8px 16px;
     border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.40));
     outline: transparent;
     resize: none;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--navyblue-modal, rgba(46, 47, 66, 0.40));
+    background-color: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-textarea:focus {
+    border-color: #4D5AE5;
 }
 
 .modal-textarea::placeholder {
     color: var(--navyblue-modal, rgba(46, 47, 66, 0.40));
-    font-family: Roboto;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1.2;
-    letter-spacing: 0.04em;
     margin: 12px;
+}
+
+.modal-check-conteiner {
+    margin-bottom: 24px;
 }
 
 .modal-check {}
@@ -902,7 +949,7 @@ ol {
     font-family: Roboto;
     font-size: 12px;
     font-weight: 400;
-    line-height: 1.2;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     display: flex;
     align-items: center;
@@ -911,14 +958,14 @@ ol {
 .modal-check-text span {
     width: 16px;
     height: 16px;
-    border-radius: 1px;
+    border-radius: 2px;
     border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.40));
     margin-right: 8px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     fill: transparent;
-    transition-duration: 300ms;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-icon-check {}
@@ -934,7 +981,21 @@ ol {
 
 }
 
-.modal-button-submit {}
+.modal-button-submit {
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
 
 .is-hidden {
     opacity: 0;

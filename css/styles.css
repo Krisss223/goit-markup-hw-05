@@ -956,10 +956,6 @@ ol {
 }
 
 .modal-check-span {
-    display: inline-flex;
-}
-
-.modal-check-text span {
     width: 16px;
     height: 16px;
     border-radius: 2px;
@@ -971,6 +967,20 @@ ol {
     fill: transparent;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* .modal-check-text span {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.40));
+    margin-right: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+} */
 
 .modal-icon-check {}
 
